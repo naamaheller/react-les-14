@@ -4,7 +4,7 @@ import axios from "axios";
 const AddProductFrom = ({ add }) => {
     let { register, handleSubmit } = useForm()
     const save = (data) => {
-        axios.post("http://localhost:4040/api/product", data)
+        axios.post("https://projectnode-1-fofg.onrender.com/api/product/", data)
             .then(result => {
                 console.log(result);
                 alert("add succssfulllll")

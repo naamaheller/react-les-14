@@ -12,7 +12,7 @@ const Product = ({ product, deleteFromArr }) => {
             )}
         </ul>
         <input type="button" value="del" onClick={() => {
-            axios.delete(`http://localhost:4040/api/product/${product._id}`).then(res => {
+            axios.delete(`https://projectnode-1-fofg.onrender.com/api/product/${product._id}`).then(res => {
                 console.log(res)
                 alert("מוצר" + res.data.name + "  נמחק בהצלחה")
                 deleteFromArr(product._id)
